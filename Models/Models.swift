@@ -49,7 +49,7 @@ enum CatSpecies: String, Codable, CaseIterable {
         case .longhair: return "cat.fill"
         case .persian: return "cat.circle"
         case .siamese: return "cat.fill.circle"
-        case .mainCoon: return "lion"
+        case .maineCoon: return "lion"
         default: return "cat"
         }
     }
