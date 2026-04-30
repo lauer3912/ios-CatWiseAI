@@ -1,4 +1,4 @@
-name: WhiskerWaves
+name: CatWiseAI
 options:
   bundleIdPrefix: com.ggsheng
   deploymentTarget:
@@ -24,7 +24,7 @@ packages:
     version: "5.1.0"
 
 targets:
-  WhiskerWaves:
+  CatWiseAI:
     type: application
     platform: iOS
     sources:
@@ -40,37 +40,37 @@ targets:
     settings:
       base:
         INFOPLIST_FILE: Resources/Info.plist
-        PRODUCT_BUNDLE_IDENTIFIER: com.ggsheng.WhiskerWaves
-        PRODUCT_NAME: WhiskerWaves
+        PRODUCT_BUNDLE_IDENTIFIER: com.ggsheng.CatWiseAI
+        PRODUCT_NAME: CatWiseAI
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         GENERATE_INFOPLIST_FILE: NO
         SWIFT_EMIT_LOC_STRINGS: YES
-        CODE_SIGN_ENTITLEMENTS: Resources/WhiskerWaves.entitlements
+        CODE_SIGN_ENTITLEMENTS: Resources/CatWiseAI.entitlements
       configs:
         Debug:
           CODE_SIGNING_ALLOWED: NO
         Release:
           CODE_SIGNING_ALLOWED: YES
     entitlements:
-      path: Resources/WhiskerWaves.entitlements
+      path: Resources/CatWiseAI.entitlements
     dependencies:
       - package: SnapKit
       - package: DGCharts
 
-  WhiskerWavesTests:
+  CatWiseAITests:
     type: bundle.unit-test
     platform: iOS
     sources:
-      - path: Tests/WhiskerWavesTests
+      - path: Tests/CatWiseAITests
     dependencies:
-      - target: WhiskerWaves
+      - target: CatWiseAI
     settings:
       base:
         GENERATE_INFOPLIST_FILE: YES
-        PRODUCT_BUNDLE_IDENTIFIER: com.ggsheng.WhiskerWavesTests
-        PRODUCT_NAME: WhiskerWavesTests
-        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/WhiskerWaves.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WhiskerWaves"
+        PRODUCT_BUNDLE_IDENTIFIER: com.ggsheng.CatWiseAITests
+        PRODUCT_NAME: CatWiseAITests
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/CatWiseAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CatWiseAI"
         BUNDLE_LOADER: "$(TEST_HOST)"
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: 9L6N2ZF26B
@@ -80,19 +80,19 @@ targets:
         Release:
           CODE_SIGNING_ALLOWED: YES
 
-  WhiskerWavesUITests:
+  CatWiseAIUITests:
     type: bundle.ui-testing
     platform: iOS
     sources:
-      - path: Tests/WhiskerWavesUITests
+      - path: Tests/CatWiseAIUITests
     dependencies:
-      - target: WhiskerWaves
+      - target: CatWiseAI
     settings:
       base:
         GENERATE_INFOPLIST_FILE: YES
-        PRODUCT_BUNDLE_IDENTIFIER: com.ggsheng.WhiskerWavesUITests
-        PRODUCT_NAME: WhiskerWavesUITests
-        TEST_TARGET: "$(BUILT_PRODUCTS_DIR)/WhiskerWaves.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WhiskerWaves"
+        PRODUCT_BUNDLE_IDENTIFIER: com.ggsheng.CatWiseAIUITests
+        PRODUCT_NAME: CatWiseAIUITests
+        TEST_TARGET: "$(BUILT_PRODUCTS_DIR)/CatWiseAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CatWiseAI"
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: 9L6N2ZF26B
       configs:
@@ -102,17 +102,17 @@ targets:
           CODE_SIGNING_ALLOWED: YES
 
 schemes:
-  WhiskerWaves:
+  CatWiseAI:
     build:
       targets:
-        WhiskerWaves: all
-        WhiskerWavesUITests: [test]
+        CatWiseAI: all
+        CatWiseAIUITests: [test]
     run:
       config: Debug
     test:
       config: Debug
       targets:
-        - WhiskerWavesUITests
+        - CatWiseAIUITests
     profile:
       config: Release
     analyze:

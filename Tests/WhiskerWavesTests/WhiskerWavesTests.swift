@@ -1,6 +1,6 @@
 import XCTest
 
-class WhiskerWavesTests: XCTestCase {
+class CatWiseAITests: XCTestCase {
 
     func testExample() throws {
         XCTAssertTrue(true)

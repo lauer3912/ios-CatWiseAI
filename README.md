@@ -1,11 +1,11 @@
-# WhiskerWaves - AI Cat Care App
+# CatWiseAI - AI Cat Care App
 
 ## App Concept
 Premium AI-powered cat health tracking and care management app for Western cat owners (25-55 years).
 
 ## Name Check Results
-- App Store Name: WhiskerWaves ✅ Available
-- Bundle ID: com.ggsheng.WhiskerWaves
+- App Store Name: CatWiseAI ✅ Available
+- Bundle ID: com.ggsheng.CatWiseAI
 
 ## Target Users
 - Western cat owners (teens to middle-aged)

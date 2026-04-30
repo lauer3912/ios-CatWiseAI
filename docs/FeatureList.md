@@ -1,4 +1,4 @@
-# WhiskerWaves — Feature List
+# CatWiseAI — Feature List
 
 ## Total: 78 Features
 
